@@ -40,14 +40,15 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center header-transparent">
     <div class="container d-flex">
-      <img class="" src="assets/img/logo.png" alt="logo">
+      <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="logo" class="img-fluid"></a>
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
           <li><a class="nav-link scrollto" href="#about">Nosotros</a></li>
           <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Portafolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Equipo</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#team">Equipo</a></li>
           <li class="dropdown"><a href="#"><span>Sistemas</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -64,15 +65,15 @@
               <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li>
             </ul>
-          </li>
+          </li> -->
           <li><a class="nav-link scrollto" href="#footer">Contactos</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
 
       <div class="social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.youtube.com/@VAIXSBolivia" class="youtube"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.facebook.com/VaixsSolutions/" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
       </div>
@@ -304,7 +305,7 @@
           <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200"">
         <div class=" box">
             <div class="icon" style="background: #e1eeff;"><i class="bi bi-brightness-high" style="color: #2282ff;"></i></div>
-            <h4 class="title"><a href="">Imagen Coporativa</a></h4>
+            <h4 class="title"><a href="">Imagen Corporativa</a></h4>
             <p class="description">Ofrecemos opciones de personalización de la marca, para que los organizadores puedan adaptar la plataforma a sus necesidades y hacer que sus eventos sean más atractivos y memorables para los participantes.</p>
           </div>
         </div>
@@ -328,7 +329,7 @@
 
         <header class="section-header">
           <h3>¿Por qué elegirnos?</h3>
-          <p>Sabemos los que necesistas y es por eso que te mostramos algunas de las razones por las que deberias trabajar con nosotros</p>
+          <p>Sabemos los que necesitas y es por eso que te mostramos algunas de las razones por las que deberías trabajar con nosotros</p>
         </header>
 
         <div class="row">
@@ -449,7 +450,7 @@
             </video> 
           </div> -->
           <div class="d-flex justify-content-center">
-            <video  autoplay loop controls>
+            <video class="embed-responsive-item" autoplay loop controls>
               <source src="assets/vid/spot.mp4" type="video/mp4">
             </video>
           </div>
@@ -542,8 +543,8 @@
                 </div>
 
                 <div class="social-links">
-                  <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                  <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.youtube.com/@VAIXSBolivia" class="youtube"><i class="bi bi-youtube"></i></a>
+                  <a href="https://www.facebook.com/VaixsSolutions/" class="facebook"><i class="bi bi-facebook"></i></a>
                   <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
                   <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
                 </div>
@@ -561,27 +562,30 @@
               <h4>Envianos un Mensaje</h4>
               <p>¿Tienes alguna pregunta, sugerencia o necesitas ayuda con nuestros sistemas? ¡No dudes en ponerte en contacto con nosotros! Completa el formulario a continuación y nos pondremos en contacto contigo lo antes posible. <br> ¡Estamos aquí para ayudarte a llevar tus eventos deportivos al siguiente nivel!</p>
 
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form"> -->
+                <form class="form-register" action="https://formspree.io/f/mgebrrqk" method="POST" role="form">
                 <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre" required>
-                </div>
-                <div class="form-group mt-3">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Tu Email" required>
-                </div>
-                <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
-                </div>
-                <div class="form-group mt-3">
-                  <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
-                </div>
-
-                <div class="my-3">
-                  <div class="loading">Cargando</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
-
-                <div class="text-center"><button type="submit" title="Send Message">Enviar Mensaje</button></div>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre" required>
+                  </div>
+                  <div class="form-group mt-3">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Tu Email" required>
+                  </div>
+                  <div class="form-group mt-3">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
+                  </div>
+                  <div class="form-group mt-3">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+                  </div>
+<br>
+                  <div class="text-center">
+                    <button style="
+                    background: #0a98c0;
+                    cursor: pointer; background: #1bb1dc;
+                    border: 0;
+                    border-radius: 3px;
+                    padding: 8px 30px;
+                    color: #fff;
+                    transition: 0.3s;" type="submit" title="Send Message">Enviar Mensaje</button></div>
               </form>
 
             </div>
@@ -595,7 +599,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>VAIXS</strong>. Todos los derechos reservados
+        &copy; Copyright <strong>VAIXS </strong>2023. Todos los derechos reservados
       </div>
     </div>
   </footer><!-- End  Footer -->
